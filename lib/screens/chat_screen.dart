@@ -112,7 +112,10 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                           ),
                           child: Text(
                             message.text,
-                            style: const TextStyle(fontSize: 16.0),
+                            style: const TextStyle(
+                              fontSize: 16.0,
+                              color: Colors.black87,
+                            ),
                           ),
                         ),
                       );
