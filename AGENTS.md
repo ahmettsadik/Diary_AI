@@ -1,0 +1,1 @@
+I am building a privacy-first, offline-first diary app in Flutter. It uses SQLite for local storage and the Groq API via HTTP for advanced LLM features. Please follow standard object-oriented principles, use Riverpod for state management, and ensure all API calls are isolated in service classes.

@@ -1,0 +1,13 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Deep Charcoal Background (Matches Dark Mode) -->
+  <rect width="1024" height="1024" rx="225" fill="#121412" />
+  
+  <!-- Sleek Pen Nib -->
+  <path d="M 512 250 L 680 500 L 600 750 L 424 750 L 344 500 Z" fill="none" stroke="#F4F5F4" stroke-width="36" stroke-linejoin="round"/>
+  
+  <!-- Pen Slit -->
+  <line x1="512" y1="250" x2="512" y2="550" stroke="#F4F5F4" stroke-width="36" stroke-linecap="round"/>
+  
+  <!-- Terracotta Ink Drop / AI Spark -->
+  <circle cx="512" cy="650" r="45" fill="#D4A373" />
+</svg>
