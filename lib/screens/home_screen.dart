@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/diary_providers.dart';
 import '../providers/theme_provider.dart';
 import 'write_entry_screen.dart'; // Assuming this screen will be created
+import 'entry_detail_screen.dart';
 import 'insights_screen.dart';
 import 'chat_screen.dart';
 import 'calendar_screen.dart';
@@ -57,9 +58,18 @@ class HomeScreen extends ConsumerWidget {
                     borderRadius: BorderRadius.circular(20.0),
                   ),
                   clipBehavior: Clip.antiAlias,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EntryDetailScreen(initialEntry: entry),
+                        ),
+                      );
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
                       // Main Content Section
                       Padding(
                         padding: const EdgeInsets.all(20.0),
@@ -135,7 +145,8 @@ class HomeScreen extends ConsumerWidget {
                             ],
                           ),
                         ).animate().fade(duration: 500.ms).slideY(begin: 0.1, end: 0),
-                    ],
+                      ],
+                    ),
                   ),
                 );
               },

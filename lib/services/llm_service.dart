@@ -5,7 +5,7 @@ import '../models/diary_entry.dart';
 
 class LLMService {
   static const String _apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
-  static const String _model = 'llama-3.3-70b-versatile';
+  static const String _model = 'openai/gpt-oss-120b';
 
   Future<String?> generateContextualQuestion(DiaryEntry entry) async {
     if (entry.isEncrypted) {
