@@ -53,3 +53,20 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# --- Recommended Additions ---
+
+# Missing Flutter & iOS
+.flutter-plugins
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.podspec
+*.xcworkspace/xcuserdata/
+
+# Android signing
+*.keystore
+*.jks
+android/key.properties
+key.properties
+
+#
