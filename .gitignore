@@ -69,4 +69,6 @@ app.*.map.json
 android/key.properties
 key.properties
 
+# Miscellaneous
+.Rhistory
 #
